@@ -1,3 +1,20 @@
 #form{
     width: 500px;
 }
+
+.card{
+    background-color: #505968 !important;
+}
+.card p{
+    color: white;
+}
+.title{
+    color: #43E0EF !important;
+}
+.footer{
+    background-color: #43E0EF !important;
+}
+.submitBtn{
+    display: block !important;
+    margin: auto;
+}

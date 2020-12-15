@@ -21,8 +21,7 @@
     "mongodb": "^3.6.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.1.2",
-    "webpack": "^4.42.1"
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -44,8 +43,17 @@
     "nodemon": "^2.0.3",
     "style-loader": "^1.1.4",
     "url-loader": "^4.1.0",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   },
-  "heroku-run-build-script": true
+  "heroku-run-build-script": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cassgdnt/CA2_BackEnd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cassgdnt/CA2_BackEnd/issues"
+  },
+  "homepage": "https://github.com/Cassgdnt/CA2_BackEnd#readme"
 }

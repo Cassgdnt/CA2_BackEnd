@@ -33,7 +33,7 @@ class EditMovies extends Component {
                     _id: response.data._id,
                     name: response.data.name,
                     real: response.data.real,
-                    year: response.data.year
+                    year: response.data.year,
                 });
             })
             .catch(error => {
@@ -69,35 +69,35 @@ class EditMovies extends Component {
             <div className="is-fluid">
                 {/*on form submit call handleSubmit()*/}
                 <form onSubmit={this.handleSubmit}>
-                    <h2 className="title is-1 has-text-primary">Edit Movies</h2>
+                    <h2 className="title is-1 has-text-centered">Edit Movies</h2>
                     <hr />
                     {/*main container for input fields*/}
                     <div className="container">
                         {/*FIRST COLUMN*/}
                         <div className="columns">
-                            <div className="column is-half">
+                            <div className="column is-half is-offset-one-quarter">
                                 <div className="field">
-                                    <label className="label"> Name: </label>
+                                    <label className="label is-large"> Name: </label>
                                     <div className="control">
-                                        <input className="input is-small" type="text" name="name" value={this.state.name} onChange={this.handleChange} id="form" />
+                                        <input className="input is-large is-info" type="text" name="name" value={this.state.name} onChange={this.handleChange} id="form" />
                                     </div>
                                 </div>
                                 <div className="field">
-                                    <label className="label">  Real: </label>
+                                    <label className="label is-large">  Real: </label>
                                     <div className="control">
-                                        <input className="input is-small" type="text" name="real" value={this.state.real} onChange={this.handleChange} id="form" />
+                                        <input className="input is-large is-info" type="text" name="real" value={this.state.real} onChange={this.handleChange} id="form" />
                                     </div>
                                 </div>
                                 <div className="field">
-                                    <label className="label"> year: </label>
+                                    <label className="label is-large"> year: </label>
                                     <div className="control">
-                                        <input className="input is-small" type="text" name="year" value={this.state.year} onChange={this.handleChange} id="form" />
+                                        <input className="input is-large is-info" type="text" name="year" value={this.state.year} onChange={this.handleChange} id="form" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/*SUBMIT BUTTON*/}
-                        <input className="button is-primary" type="submit" value="Submit" />
+                        <input className="button submitBtn is-info is-rounded is-large is-light" type="submit" value="Submit" />
                     </div>
                 </form>
             </div>
